@@ -1,0 +1,21 @@
+{
+  "name": "chaninlaw-skills",
+  "version": "0.1.0",
+  "description": "chaninlaw's agent skills. Starting with verification skills that drive a real app and prove behavior.",
+  "author": {
+    "name": "chaninlaw",
+    "url": "https://github.com/chaninlaw"
+  },
+  "homepage": "https://github.com/chaninlaw/skills",
+  "repository": "https://github.com/chaninlaw/skills",
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "verification",
+    "engineering"
+  ],
+  "skills": [
+    "./skills/engineering/create-verification-skill",
+    "./skills/engineering/maintain-verification-skill"
+  ]
+}
