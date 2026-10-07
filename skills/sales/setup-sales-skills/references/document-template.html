@@ -1,0 +1,87 @@
+<!doctype html>
+<!--
+  Branded print template for sales documents (proposal, quotation, SOW, contract).
+  setup-sales-skills copies this file to docs/sales/brand/document-template.html and fills the
+  :root tokens from docs/sales/brand/brand.md. sales-document fills the {{...}} slots per document.
+  Print to A4 PDF from a browser, or headless Chrome (see sales-document).
+-->
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{doc_title}}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="{{font_url}}">
+<style>
+  :root {
+    --brand-primary: #1f3a5f;
+    --brand-secondary: #4a6fa5;
+    --brand-accent: #e0a526;
+    --text: #1d1d1f;
+    --muted: #6b6b70;
+    --rule: #d9dce1;
+    --surface: #f5f7fa;
+    --font-body: "IBM Plex Sans Thai", "Noto Sans Thai", system-ui, sans-serif;
+    --font-heading: var(--font-body);
+  }
+  @page { size: A4; margin: 18mm 16mm 20mm; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #fff; color: var(--text); }
+  body { font-family: var(--font-body); font-size: 10.5pt; line-height: 1.65; }
+  h1, h2, h3 { font-family: var(--font-heading); color: var(--brand-primary); line-height: 1.5; }
+  h1 { font-size: 22pt; margin: 0 0 4mm; }
+  h2 { font-size: 14pt; margin: 9mm 0 3mm; padding: 1mm 0 1.5mm; border-bottom: 2px solid var(--brand-accent); break-after: avoid; break-inside: avoid; }
+  h3 { font-size: 11.5pt; margin: 6mm 0 2mm; color: var(--brand-secondary); break-after: avoid; }
+  p, li { orphans: 3; widows: 3; }
+  a { color: var(--brand-secondary); }
+  table { width: 100%; border-collapse: collapse; margin: 3mm 0 5mm; }
+  thead { display: table-header-group; }
+  tr { break-inside: avoid; }
+  th { background: var(--brand-primary); color: #fff; text-align: left; font-weight: 600; }
+  th, td { padding: 2mm 3mm; border: 1px solid var(--rule); vertical-align: top; }
+  tbody tr:nth-child(even) td { background: var(--surface); }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  tr.total td { font-weight: 700; border-top: 2px solid var(--brand-primary); background: #fff; }
+  blockquote { margin: 4mm 0; padding: 3mm 4mm; background: var(--surface); border-left: 3px solid var(--brand-accent); }
+
+  .cover { min-height: 245mm; display: flex; flex-direction: column; break-after: page; }
+  .cover .logos { display: flex; justify-content: space-between; align-items: center; gap: 8mm; }
+  .cover .logos img { max-height: 18mm; max-width: 60mm; object-fit: contain; }
+  .wordmark { font-family: var(--font-heading); font-size: 16pt; font-weight: 700; color: var(--brand-primary); }
+  .cover .title { margin-top: 60mm; border-top: 6px solid var(--brand-primary); padding-top: 8mm; }
+  .cover .subtitle { font-size: 13pt; color: var(--muted); }
+  .cover .meta { margin-top: auto; display: grid; grid-template-columns: max-content 1fr; gap: 1.5mm 6mm; color: var(--muted); font-size: 9.5pt; }
+  .cover .meta b { color: var(--text); font-weight: 600; }
+
+  .signatures { display: grid; grid-template-columns: 1fr 1fr; gap: 14mm; margin-top: 18mm; break-inside: avoid; }
+  .signatures div { border-top: 1px solid var(--text); padding-top: 2mm; text-align: center; font-size: 9.5pt; }
+  .footer-note { margin-top: 10mm; font-size: 8.5pt; color: var(--muted); }
+  @media screen { body { max-width: 210mm; margin: 0 auto; padding: 16mm; } }
+</style>
+</head>
+<body>
+  <section class="cover">
+    <div class="logos">
+      {{seller_logo_html}}
+      {{client_logo_html}}
+    </div>
+    <div class="title">
+      <h1>{{doc_title}}</h1>
+      <div class="subtitle">{{doc_subtitle}}</div>
+    </div>
+    <div class="meta">
+      <span>{{label_prepared_for}}</span><b>{{client_name}}</b>
+      <span>{{label_prepared_by}}</span><b>{{seller_name}}</b>
+      <span>{{label_doc_no}}</span><b>{{doc_no}}</b>
+      <span>{{label_date}}</span><b>{{doc_date}}</b>
+      <span>{{label_valid_until}}</span><b>{{valid_until}}</b>
+    </div>
+  </section>
+
+  <main>
+{{content}}
+  </main>
+
+  <p class="footer-note">{{footer_note}}</p>
+</body>
+</html>
