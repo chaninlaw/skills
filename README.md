@@ -27,7 +27,7 @@ User-invoked (reachable only when you type them):
 - **[create-verification-skill](./skills/engineering/create-verification-skill/SKILL.md)**: Generate a project-local verification skill that drives your app the way a user does, with a feature map of user-facing behavior.
 - **[maintain-verification-skill](./skills/engineering/maintain-verification-skill/SKILL.md)**: Periodic pass that keeps a verification skill and its feature map honest, shipping at most one PR of proven corrections.
 
-Other buckets ([sales](./skills/sales/README.md), [productivity](./skills/productivity/README.md), [misc](./skills/misc/README.md), [in-progress](./skills/in-progress/README.md)) are empty for now.
+Other buckets ([sales](./skills/sales/README.md), [writing](./skills/writing/README.md), [productivity](./skills/productivity/README.md), [misc](./skills/misc/README.md), [in-progress](./skills/in-progress/README.md)) are not promoted yet or empty.
 
 ## Credits
 
@@ -42,6 +42,8 @@ The [sales](./skills/sales/README.md) bucket is rewritten from these MIT-license
 - [jezweb/claude-skills](https://github.com/jezweb/claude-skills) at `64965d9` (Jeremy Dawes): `proposal-writer`.
 
 Changes from the originals: condensed to one solo-seller flow over a shared `docs/sales/` workspace whose stage exit criteria are buyer acts recorded as files; enterprise team mechanics (approval chains, quotas, scoring scripts) dropped; Thailand drafting pointers and a branded print template added. `sales-document` and the template are original.
+
+`writing-beats` in the [writing](./skills/writing/README.md) bucket is adapted from `writing-beats` in [mattpocock/skills](https://github.com/mattpocock/skills) at `f3fc563` (Matt Pocock, MIT). Changes from the original: reads a `docs/writing/` workspace and the author's `voice.md`, defaults to Thai, and names each candidate beat by a story pattern from its own `references/story-patterns.md`. `writing-harvest` (with its session extractor) and `writing-edit` are original.
 
 ## License
 
