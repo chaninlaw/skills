@@ -45,5 +45,5 @@ For the deal way in, answer in this order, citing file paths:
 
 1. Stage (from `deal.md`) and whether the evidence agrees with it.
 2. Exit criteria for that stage, each green / yellow / red with the file or quote behind it.
-3. Missing files for this and earlier stages.
+3. Missing files for this and earlier stages, and files that cannot be relied on yet: `status: draft`, past `stale_after`, or client-facing with no `verified`.
 4. One next action, the skill that does it, and its date. When `deal.md` says something the folder does not support, flag the mismatch rather than trusting the field.

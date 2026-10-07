@@ -1,6 +1,9 @@
 ---
+type: Brand
+title: Brand (CI)
+description: Colors, fonts and logo for client-facing documents.
 version: 1
-updated: <yyyy-mm-dd>
+generated: { by: <actor>, at: <ISO 8601 datetime> }
 ---
 
 # Brand (CI)

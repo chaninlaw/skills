@@ -3,7 +3,7 @@
 // Usage: node render.mjs <document-template.html> <source.md> <out.html>
 // Zero dependencies. Handles the Markdown subset sales documents use: headings, paragraphs,
 // bullet and numbered lists, GFM tables, blockquotes, bold/italic/code/links, raw HTML blocks.
-// Per-document slots come from the source's YAML frontmatter (flat `key: value` lines):
+// Per-document slots come from the source's YAML frontmatter (flat `key: value` lines; other OKF keys are ignored):
 //   title, subtitle, doc_no, date, valid_until, client_name, footer_note, client_logo (optional path)
 // Exits non-zero, listing the slots, when any {{slot}} would survive into the output.
 import fs from 'node:fs';
@@ -27,6 +27,8 @@ md = md.replace(/^---\n([\s\S]*?)\n---\n/, (_, block) => {
   return '';
 });
 md = md.replace(/^\s*# .*\n/, ''); // the cover carries the title
+// OKF footnotes ([^id] keyed to frontmatter `sources`) are for internal readers: drop them from the client's copy.
+md = md.replace(/^\[\^[^\]]+\]:.*(\n|$)/gm, '').replace(/\[\^[^\]]+\]/g, '');
 
 const inline = (s) =>
   esc(s)

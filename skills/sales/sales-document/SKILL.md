@@ -10,19 +10,19 @@ Turn a finished Markdown document into what the client receives. Read `docs/sale
 ## 1. Draft or send
 
 - **Draft** (default): output goes to the deal's `drafts/`, overwritten freely.
-- **Send**: output goes to `sent/` only when the user says this version is going to the client. If `deal.md` is earlier than `stage: proposal`, say so first: a document ahead of its stage usually means a skipped step. A sent version is never overwritten.
+- **Send**: output goes to `sent/` only when the user says this version is going to the client. That approval is recorded on the source: `verified: { by: human:<seller slug>, at: <now> }` and `status: stable`. If `deal.md` is earlier than `stage: proposal`, say so first: a document ahead of its stage usually means a skipped step. A sent version is never overwritten.
 
 Output name: the source file's name plus version and date, e.g. `05-proposal-v2-2026-10-07.html` / `.pdf`, where `v<N>` is one more than the highest version in `sent/`.
 
 ## 2. Fill and convert
 
-The source needs the frontmatter keys listed in the README (`title`, `doc_no`, `date`, `client_name`, ...); add any that are missing from `deal.md` and `seller.md` before rendering. If `brand.md` changed since setup, re-sync the template's `:root` tokens and font link from it first.
+The source needs the frontmatter keys listed in the README (`type`, `title`, `doc_no`, `date`, `client_name`, ...); add any that are missing from `deal.md` and `seller.md` before rendering. If `brand.md` changed since setup, re-sync the template's `:root` tokens and font link from it first.
 
 ```bash
 node <this skill>/scripts/render.mjs docs/sales/brand/document-template.html <source.md> <out.html>
 ```
 
-It converts the Markdown, right-aligns columns whose every cell is a number or amount, styles a row whose first cell is wholly bold as the total, passes raw HTML blocks through (signature blocks: `<div class="signatures">`), and fails listing any slot left unfilled. A column mixing numbers and text ("to be estimated") stays left-aligned: that is intended.
+It converts the Markdown, right-aligns columns whose every cell is a number or amount, styles a row whose first cell is wholly bold as the total, passes raw HTML blocks through (signature blocks: `<div class="signatures">`), strips footnote markers and definitions (sources stay in the frontmatter, not the client's copy), and fails listing any slot left unfilled. A column mixing numbers and text ("to be estimated") stays left-aligned: that is intended.
 
 ## 3. PDF
 

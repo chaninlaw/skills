@@ -1,6 +1,9 @@
 ---
+type: Storage Target
+title: Document storage
+description: Where client-facing documents are delivered and the tool that reaches them.
 version: 1
-updated: <yyyy-mm-dd>
+generated: { by: <actor>, at: <ISO 8601 datetime> }
 ---
 
 # Document storage

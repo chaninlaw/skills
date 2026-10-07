@@ -1,6 +1,10 @@
 ---
+type: Seller Profile
+title: <display name>
+description: "Who is selling: identity, legal and tax, commercial defaults, rate card, proof points."
+tags: [internal]
 version: 1
-updated: <yyyy-mm-dd>
+generated: { by: <actor>, at: <ISO 8601 datetime> }
 ---
 
 # Seller profile
@@ -15,6 +19,7 @@ Read by every sales skill. Unknown values are written `[not captured]`, never le
 - Registration / tax ID: <number or [not captured]>
 - Address: <for quotations and contracts>
 - Contact: <name, role, email, phone>
+- Seller slug: <e.g. somchai; the user's id in OKF actors, `human:<slug>`>
 - Signatory: <name, title>
 
 ## Commercial defaults

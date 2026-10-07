@@ -1,6 +1,6 @@
 # Sales
 
-Skills for selling custom software and maintenance as a freelancer or small software house: lead to signed contract, with every stage advanced by evidence in a per-project `docs/sales/` workspace. Not promoted yet: not shipped in the Claude Code plugin and not listed in the top-level `README.md` until tested on real deals.
+Skills for selling custom software and maintenance as a freelancer or small software house: lead to signed contract, with every stage advanced by evidence in a per-project `docs/sales/` workspace, kept as an [Open Knowledge Format](https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/cd6fb05c0697be794513883b11682dd10d4ef924/okf) (OKF) v0.2 bundle any agent can read. Not promoted yet: not shipped in the Claude Code plugin and not listed in the top-level `README.md` until tested on real deals.
 
 Start with `/setup-sales-skills`, then `/ask-sales` whenever you are unsure what comes next.
 
