@@ -20,7 +20,7 @@ Diagnose with the client, not for them: each seller finding is tested with the c
 
 Write 2-4 **shared goals**: outcomes both sides want, anchored on the client's success in their own words and the impact figure from `01-discovery.md` (for example "quote turnaround from 2 days to same day"), each with how it will be measured and the obstacles that could stop it (each obstacle becomes a roadmap item, an assumption, or a risk). A goal the client would not recognise as theirs is cut.
 
-With the goals set, check every seller item: is this what the problem needs, or the seller's usual stack, habit, or an upsell? It stays only if it traces to a shared goal and an impact the client stated. Tag what stays **prerequisite** (the goal fails without it: proposed with the reason), **improves**, or **delighter** (the client chooses).
+With the goals set, check every seller item: is this what the problem needs, or the seller's usual stack, habit, or an upsell? It stays only if it traces to a shared goal and an impact the client stated. Tag what stays **prerequisite** (the goal fails without it: proposed with the reason), **improves**, or **delighter** (the client chooses; until then it sits in the roadmap as an option under its goal).
 
 Merge both lenses into one **roadmap** toward those goals: each item names the goal it serves and the lens it came from (client, seller, or both), in the order that reaches the first goal soonest. Where the lenses disagree, write it plainly: the client asked for X, the seller recommends Y because Z, where Z is evidence or a standard the client can check, not the seller's preference; the client decides, with the date, in step 7. An item that serves no shared goal and has no source goes to Optional.
 
