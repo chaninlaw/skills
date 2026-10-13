@@ -117,7 +117,7 @@ Grade each criterion **green** (evidence in the folder), **yellow** (the seller 
 | research | `sales-research` | `clients/<client>/profile.md` exists with sources; client agreed to a first conversation (logged) |
 | discovery | `sales-discovery` | client stated the problem and what it costs them, in their words (quoted, dated, named speaker); recap sent and not corrected by the client |
 | qualify | `sales-qualify` | client named who decides and who pays; client gave a budget range or accepted a ballpark; client named a date or event driving the decision; bid / no-bid recorded with reasons |
-| solution | `sales-solution` | client wrote or approved the requirements or scope outline (email or comment logged); open questions closed or turned into written assumptions |
+| solution | `sales-solution` | client approved the shared goals and the scope outline in writing (email or comment logged); every disagreement between the client's asks and the seller's recommendation decided by the client; open questions closed or turned into written assumptions |
 | proposal | `sales-pricing`, `sales-proposal`, `sales-document` | proposal and quotation are in `sent/`; client confirmed receipt and a walkthrough happened or a decision date was confirmed |
 | negotiate | `sales-negotiate` | client accepted scope and price in writing (email, PO, or signed quotation in `inputs/`) |
 | contract | `sales-contract` | contract signed by both sides; deposit invoiced; `08-handoff.md` lists every commitment and exclusion made during the sale |
