@@ -16,7 +16,7 @@ Reachable only when you type them (Claude Code: `disable-model-invocation: true`
 - **[sales-research](./sales-research/SKILL.md)**: Open a client and deal: public company research with every fact sourced, and a folder for the client's documents.
 - **[sales-discovery](./sales-discovery/SKILL.md)**: Prepare a discovery call, then turn the notes into a quoted discovery record and a recap the client confirms.
 - **[sales-qualify](./sales-qualify/SKILL.md)**: Bid / no-bid, TOR requirement fit, and red flags graded by evidence.
-- **[sales-solution](./sales-solution/SKILL.md)**: Scope, phases, estimate ranges, assumptions, and an optional paid discovery or POC.
+- **[sales-solution](./sales-solution/SKILL.md)**: Client's asks and the seller's view merged into a roadmap toward shared goals, then scope, phases, estimate ranges, assumptions, and an optional paid discovery or POC.
 - **[sales-pricing](./sales-pricing/SKILL.md)**: Cost floor, value ceiling, phase and MA-term options, and a conservative business case.
 - **[sales-proposal](./sales-proposal/SKILL.md)**: Client-facing proposal, quotation and SOW, plus the follow-up plan.
 - **[sales-document](./sales-document/SKILL.md)**: Render a sales document on-brand to versioned HTML and A4 PDF and deliver it to the storage target.

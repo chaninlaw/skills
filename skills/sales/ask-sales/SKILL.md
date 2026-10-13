@@ -20,7 +20,7 @@ No `docs/sales/README.md` yet? The answer is **`/setup-sales-skills`**, whatever
 1. **`sales-research`** opens the client and the deal folder: public research with sources, a place for the client's own documents.
 2. **`sales-discovery`** prepares the questions, then turns call notes into a discovery record and a recap the client confirms.
 3. **`sales-qualify`** decides whether to pursue: bid / no-bid, red flags graded by evidence, who decides and who pays. A no-bid ends the flow here, with its reason logged.
-4. **`sales-solution`** turns the confirmed problem into scope, phases, estimate and assumptions. A paid discovery or POC is a branch here when scope is too foggy to price.
+4. **`sales-solution`** weighs the client's asks against the seller's view, merges them into a roadmap toward shared goals, then scope, phases, estimate and assumptions. A paid discovery or POC is a branch here when scope is too foggy to price.
 5. **`sales-pricing`** builds cost floor, options and the business case (internal), then **`sales-proposal`** writes the proposal and quotation, and **`sales-document`** renders them on-brand into `sent/`.
 6. **`sales-negotiate`** plans gives and gets before the client pushes back.
 7. **`sales-contract`** drafts the contract and closes with the handoff note that carries every promise into delivery.
