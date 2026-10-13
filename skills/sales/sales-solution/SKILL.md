@@ -14,7 +14,7 @@ Assess the deal twice before scoping anything; what the client asks for and what
 - **Client lens** (what they asked): each client need with its source (a quote in `01-discovery.md`, or a requirement ID carried from the fit matrix in `02-qualify.md`), its priority (must / should / nice, in the client's terms), and how it is met: **Full**, **Partial**, **Planned** (later phase), or **Gap**. A Planned item is never written as Full. Ladder "why?" from each ask until it reaches an outcome the client owns; those outcomes feed the shared goals.
 - **Seller lens** (what solves it): from the root cause, impact, and what they already tried in `01-discovery.md`, what the problem actually needs, including what the client did not ask for: prerequisites (data cleanup, access, a process change), risks (a fragile system to integrate, no one to run it after launch), sequencing (what must exist before what), and asks that would not move their number. Each item cites the discovery quote it answers, or is marked as the seller's recommendation.
 
-Diagnose with the client, not for them: each seller finding is tested with the client (a question for the next call, or a point in step 7) before it shapes scope. Then check every seller item: is this what the problem needs, or the seller's usual stack, habit, or an upsell? It stays only if it traces to a shared goal and an impact the client stated. Tag what stays **must-have** (the goal fails without it: proposed as a prerequisite, with the reason), **improves**, or **delighter** (the client chooses).
+Diagnose with the client, not for them: each seller finding is tested with the client, in the next call or in step 7. Until then it enters the roadmap and scope only marked **pending client**. Then check every seller item: is this what the problem needs, or the seller's usual stack, habit, or an upsell? It stays only if it traces to a shared goal and an impact the client stated. Tag what stays **must-have** (the goal fails without it: proposed as a prerequisite, with the reason), **improves**, or **delighter** (the client chooses).
 
 ## 2. Shared goals and roadmap
 
@@ -52,6 +52,6 @@ When the spread is wider than about 2x, or key data is unseen, propose a **paid 
 
 ## 7. Confirm with the client
 
-Turn `03-solution.md` into a short scope outline the client can review (shared goals, roadmap with each open disagreement as a choice for them, deliverables, phases, out of scope, their responsibilities; no estimate yet if pricing is not ready). Their written approval or comments go into `inputs/`.
+Turn `03-solution.md` into a short scope outline the client can review (shared goals, roadmap with each open disagreement and pending client item as a choice for them, deliverables, phases, out of scope, their responsibilities; no estimate yet if pricing is not ready). Their written approval or comments go into `inputs/`.
 
-Update `deal.md` (`stage: solution`, next action, log line). Exit criteria: the client approved the shared goals and scope outline in writing, every lens disagreement is decided, and open questions are closed or written as assumptions. Then `sales-pricing`.
+Update `deal.md` (`stage: solution`, next action, log line). Exit criteria: the client approved the shared goals and scope outline in writing, every lens disagreement and pending client item is decided, and open questions are closed or written as assumptions. Then `sales-pricing`.
