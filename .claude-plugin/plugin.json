@@ -15,6 +15,7 @@
     "engineering"
   ],
   "skills": [
+    "./skills/engineering/architect-scout",
     "./skills/engineering/create-verification-skill",
     "./skills/engineering/maintain-verification-skill"
   ]
