@@ -28,6 +28,10 @@ User-invoked (reachable only when you type them):
 - **[create-verification-skill](./skills/engineering/create-verification-skill/SKILL.md)**: Generate a project-local verification skill that drives your app the way a user does, with a feature map of user-facing behavior.
 - **[maintain-verification-skill](./skills/engineering/maintain-verification-skill/SKILL.md)**: Periodic pass that keeps a verification skill and its feature map honest, shipping at most one PR of proven corrections.
 
+Model-invoked (Claude picks them up when they fit the task):
+
+- **[post-review](./skills/engineering/post-review/SKILL.md)**: Turn code-review findings into consistent GitHub PR review comments and post them as one review after you approve a preview.
+
 Other buckets ([sales](./skills/sales/README.md), [writing](./skills/writing/README.md), [productivity](./skills/productivity/README.md), [misc](./skills/misc/README.md), [in-progress](./skills/in-progress/README.md)) are not promoted yet or empty.
 
 ## Credits

@@ -12,4 +12,4 @@ Reachable only when you type them (Claude Code: `disable-model-invocation: true`
 
 ## Model-invoked
 
-None yet.
+- **[post-review](./post-review/SKILL.md)**: Turn code-review findings into consistent GitHub PR review comments and post them as one review after you approve a preview.
