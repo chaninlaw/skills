@@ -13,3 +13,4 @@ Reachable only when you type them (Claude Code: `disable-model-invocation: true`
 ## Model-invoked
 
 - **[post-review](./post-review/SKILL.md)**: Turn code-review findings into consistent GitHub PR review comments and post them as one review after you approve a preview.
+- **[pr-review](./pr-review/SKILL.md)**: Review a pull request or merge request end-to-end by running code-review on the diff, then handing findings to post-review to format and post.

@@ -31,6 +31,7 @@ User-invoked (reachable only when you type them):
 Model-invoked (Claude picks them up when they fit the task):
 
 - **[post-review](./skills/engineering/post-review/SKILL.md)**: Turn code-review findings into consistent GitHub PR review comments and post them as one review after you approve a preview.
+- **[pr-review](./skills/engineering/pr-review/SKILL.md)**: Review a pull request or merge request end-to-end by running code-review on the diff, then handing findings to post-review to format and post.
 
 Other buckets ([sales](./skills/sales/README.md), [writing](./skills/writing/README.md), [productivity](./skills/productivity/README.md), [misc](./skills/misc/README.md), [in-progress](./skills/in-progress/README.md)) are not promoted yet or empty.
 

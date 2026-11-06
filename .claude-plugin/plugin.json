@@ -18,6 +18,7 @@
     "./skills/engineering/architect-scout",
     "./skills/engineering/create-verification-skill",
     "./skills/engineering/maintain-verification-skill",
-    "./skills/engineering/post-review"
+    "./skills/engineering/post-review",
+    "./skills/engineering/pr-review"
   ]
 }
